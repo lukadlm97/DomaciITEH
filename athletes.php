@@ -72,60 +72,20 @@
              echo "<td>" . $red->Sport . "</td>";
              echo "<td>" . $red->Country . "</td>";
              echo "<td>" . $red->YearOfBirth . "</td>";
-            ?>
-            <td>Update<span class="glyphicon glyphicon-print"></span></td>
-            <td>Delete<span class="glyphicon glyphicon-print"></span></td>
-            <td>Details<span class="glyphicon glyphicon-print"></span></td>
-            <?php
+             $id = $red->Id ;
+            
+            echo "<td> <a href='editAthletes.php?id=$id'>Edit</a></td>";
+            echo "<td> <a href='editAthletes.php?id=$id'>Delete</a></td>";
+            echo "<td> <a href='editAthletes.php?id=$id'>Details</a></td>";
+         
+           ?>
+           <?php
              echo "</tr>";
              }
             echo "</table>";
             ?>
         </div>
-        <div class="center">
-            <form class="form-horizontal " action="/obrada_forme.php">
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="name">Name:</label>
-                    <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" placeholder="Enter name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Sport:</label>
-                    <div class="col-sm-10">
-                    <input type="text" class="form-control" id="pwd" placeholder="Enter sport">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Country:</label>
-                    <div class="col-sm-10">
-                    <input type="text" class="form-control" id="pwd" placeholder="Enter country">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Year:</label>
-                    <div class="col-sm-10">
-                    <input type="number" class="form-control" id="pwd" placeholder="Enter year">
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">Add</button>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Update</button>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Delete</button>
-                    </div>
-                </div>
-            </form> 
-            </div>
+        
         <!-- Footer -->
 <div class="jumbotron text-center">© Copyright 2019 Luka Radovanovic</div>
 

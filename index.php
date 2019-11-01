@@ -26,6 +26,7 @@
 
     </head>
     <body>
+    
     <div class="navbar center"  >
     <div class="navbar-inner">
         <div class="jumbotron bg-danger text-white-50 jumbotron-fluid">
@@ -46,7 +47,7 @@
         <div class="container">
         </div>
         <!-- Footer -->
-<div class="jumbotron text-center">© Copyright 2019 Luka Radovanovic</div>
+    <div class="jumbotron text-center">© Copyright 2019 Luka Radovanovic</div>
 
     </body>
 </html>
